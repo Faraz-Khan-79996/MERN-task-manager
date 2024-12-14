@@ -6,7 +6,7 @@
         "use": "@vercel/node"
       },
       {
-        "src": "dist/**",
+        "src": "build/**",
         "use": "@vercel/static"
       }
     ],
@@ -24,12 +24,12 @@
       },
       {
         "src": "/",
-        "dest": "dist/index.html"
+        "dest": "build/index.html"
       },
       { "src": "/[^.]+", "dest": "/", "status": 200 },
       {
         "src": "/(.+)",
-        "dest": "dist/$1"
+        "dest": "build/$1"
       }
     ]
   }
