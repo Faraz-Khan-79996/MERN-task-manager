@@ -14,7 +14,7 @@ function Leaderboard() {
     const fetchLeaderboard = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/api/user/", {
+        const response = await axios.get("/api/user/", {
         });
         // Calculate total score for each user
         const usersWithScores = response.data.users.map((user) => ({
