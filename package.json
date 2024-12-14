@@ -12,7 +12,12 @@
     "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
     "start": "cd backend && node app.js"
   },
-  "keywords": ["MERN", "Tasks","Task manager", "Full stack application"],
+  "keywords": [
+    "MERN",
+    "Tasks",
+    "Task manager",
+    "Full stack application"
+  ],
   "author": "Faraz",
   "license": "ISC",
   "devDependencies": {

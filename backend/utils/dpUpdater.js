@@ -62,7 +62,7 @@ const assignments = [
     }
 ];
 
-mongoose.connect('mongodb+srv://farazgod1234:70RWzraqdTpbzN9I@cluster0.sbl38.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(async () => {
         console.log('Database connected!');
         await Assignment.insertMany(assignments);
